@@ -1,55 +1,60 @@
-body{
+body {
     background-color: rgb(170, 100, 50);
     color: wheat;
 }
-.header{
-    background-image: url('../img/safari_principal.jpeg');
-    background-size: cover;
-    background-position: center center;
+
+/* Estilo el encabezado */
+.header {
+    background-image: url('../img/safari_principal.jpeg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el espacio disponible */
+    background-position: center center; /* La imagen se centra en el contenedor */
     min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
 }
-.header h1{
-    font-size:2.9rem;
+
+.header h1 {
+    font-size: 2.9rem;
     color: wheat;
 }
-.header p{
-    color: wheat;
+
+.header p {
+    color: wheat;/
 }
-.hr-custom{
+
+/* Estilo línea horizontal personalizada HR */
+.hr-custom {
     border: 1.5px solid wheat;
 }
-/* Fondo del acordeón principal */
-/* Fondo del acordeón principal */
-.accordion-item {   
-    border: none; /* Elimina el borde */
-}
 
-/* Fondo cuando el acordeón está abierto */
-.accordion-button{
-    background-color:  rgb(245, 184, 102); /* Color más oscuro cuando está abierto */
-    font-weight: bold;
+/* Estilos generales para el acordeón (BOTONES)*/
+.accordion-button, 
+.accordion-button:not(.collapsed) {
+    background-color: rgb(245, 184, 102);  
+    font-weight: bold;  
+    color: rgb(63, 48, 43); 
 }
-.accordion-button:not(.collapsed){
-    background-color: rgb(245, 184, 102);
-    color: rgb(63,48,43);
-}
-
-/* Fondo del contenido del acordeón */
+/* Estilos para el contenido del acordeón */
 .accordion-body {
-    background-color:rgb(92, 51, 23); /* Un tono dorado suave como el sol */
-    color: wheat;
+    background-color: rgb(92, 51, 23); 
+    color: wheat; 
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+/* Fondo del acordeón principal */
+.accordion-item {
+    border: none;
 }
 footer {
-    background-color: rgb(63, 48, 43);  /* Color del fondo del footer */    
+    background-color: rgb(63, 48, 43);/
 }
-footer a{
+/* Estilo para los enlaces dentro del footer */
+footer a {
     color: wheat;
-    text-decoration: none;
+    text-decoration: none; /* Quitamos el subrayado de los enlaces por defecto */
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
