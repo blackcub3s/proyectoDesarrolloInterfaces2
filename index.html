@@ -679,7 +679,7 @@
                         <li>Avistamiento de fauna en parques nacionales</li>
                         <li>Alojamiento en camping</li>
                         <li>Comidas incluidas (menú básico)</li>
-                        <li>África 4 dias, Zimbabue 3 días. </li>
+                        <li>África 4 dias | Zimbabue 3 días. </li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -696,10 +696,10 @@
                     <ul class="card-text">
                         <li>Transporte en minibús (10 personas)</li>
                         <li>Guía especializado bilingüe</li>
-                        <li>Safaris y excursiones a puntos principales</li>
+                        <li>Excursiones a puntos principales</li>
                         <li>Lodge estándar con habitación doble</li>
                         <li>Pensión completa con variedad gastronómica</li>
-                        <li>Africa 5 días | Zimbabue 3 (itinerario completo)</li>
+                        <li>Africa 5 días | Zimbabue 3</li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -714,12 +714,12 @@
                   <div class="card-body">
                     <h5 class="card-title display-6 text-center">Plan premium</h5>
                     <ul class="card-text">
-                        <li>Toyota Land Cruiser 2024 privado (4 personas)</li>
+                        <li>Transporte: Toyota Land Cruiser (4 personas)</li>
                         <li>Guía experto personal multilingüe</li>
                         <li>Acceso exclusivo a zonas restringidas</li>
                         <li>Lodge premium con suite privada</li>
-                        <li>Gastronomía gourmet y cenas especiales</li>
-                        <li>Africa 8 días | Zimbabue 5 (itinerario completo)</li>
+                        <li>Gastronomía gourmet (estrella michelin)</li>
+                        <li>Africa 8 días | Zimbabue 5</li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -766,9 +766,42 @@
 
 
 
+        <!-- FORMULARIO DE CONTACTO -->
+         <!-- Se ha timado este formulario https://getbootstrap.com/docs/4.0/components/forms/ 
+          y se ha puesto dentro de un div class container. Luego se ha modificado para ajustarlo a nuestra página web.-->
 
-
-
+          <!--en dispositivos el formulario solo ocupara 5 columnas de las 12 posibles (Col-xl-5)-->
+          <!--en dispositivos grandes ocupará un poco más que en  los enormes: 7 columnas de las 12 posibles (Col-lg-9)-->
+          <!--- ... -->
+          <!-- en dispositivos pequeños (mobil por ejemplo) el formulario ocupará las 12 columnas de las 12 posibles de bootsrapp (TODA LA PANTALLA DE UN TELÉFONO MÓBIL, POR EJEMPLO)-->
+          <div class="container col-sm-12 col-md-8 col-lg-7 col-xl-5">   
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1" class = "mb-1">Correo electrónico</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1" class = "mt-3 mb-1">Escoge un plan sobre el que querrías información:</label> <!--mt-2 es margin-top-2 (Classe bootstrap). mb es margin bottom. Lo usamos en todas las labels del formulario-->
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Plan económico</option>
+                    <option>Plan intermedio</option>
+                    <option>Plan premium</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2" class = "mt-3 mb-2">¿Qué safari te suscita interés? ¿Los dos?</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>África</option>
+                    <option>Zimbabue</option>
+                    <option>Otro (tenemos más en camino, marca esta opción si quieres saber más novedades)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1" class = "mt-3 mb-2">Cuéntanos que expectativas tienes:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+              </form>
+        </div>
 
 
 
@@ -792,6 +825,9 @@
             </div>
         </footer>
 
+
+
+        
         <!-- Bootstrap 5 JavaScript (CDN) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
