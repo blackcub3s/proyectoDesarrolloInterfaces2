@@ -58,3 +58,23 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/*Espacio por debajo de la linea que antecede a las cards
+para evitar que las tres cars se peguen encima en desktop*/
+#espacioPreCards {
+    padding-bottom: 1.6em;
+}
+
+/*Espacio por encima de las cards, para
+que no se peguen al acordeón del safari en la 
+selva de Zimbabue */
+#paddingCard1, #paddingCard2, #paddingCard3 {
+    padding-bottom: 3em;
+}
+
+/*La card original de la página web de bootstrap era blanca.
+Nosotros hemos utilizado la opacidad al 30% para conseguir
+que tome el fondo de la web*/
+.card {
+    background-color: rgba(255, 255, 255, 0.3); 
+}

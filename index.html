@@ -40,10 +40,10 @@
                             <a class="nav-link active fw-bold" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Safaris</a>
+                            <a class="nav-link" href="#destino">Destinos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Aventuras</a>
+                            <a class="nav-link" href="#precios">Precios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contacto</a>
@@ -53,21 +53,19 @@
             </div>
         </nav>
         <!-- imagen principal con texto -->
-        <header>
-            <div class="header container-fluid bg-dark text-center py-5">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="py-2">Black Boots Safaris</h1>
-                        <p class="fst-italic fs-5">
-                            Más que safaris, aventuras inolvidables en África.
-                        </p>
-                    </div>
+        <div class="header container-fluid bg-dark text-center py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="py-2">Black Boots Safaris</h1>
+                    <p class="fst-italic fs-5">
+                        Más que safaris, aventuras inolvidables en África.
+                    </p>
                 </div>
             </div>
-        </header>
+        </div>
 
         <!-- Barra superior horizontal -->
-        <div class="container mt-4">
+        <div class="container mt-4" id = "destino">
             <div class="row">
                 <div class="col-12">
                     <hr class="hr-custom">
@@ -624,9 +622,114 @@
             </div>
         </div>
 
+
+
+
+
+
+
+
+        <!-- Barra superior horizontal -->
+        <div class="container mt-4" id = "precios"> <!-- ponemos el id para poder movernos del navbar de arriba a los precios al hacer click, dentor de la misma pagina-->
+            <div class="row">
+                <div class="col-12">
+                    <hr class="hr-custom">
+                </div>
+            </div>
+        </div>
+
+        <!-- Texto central del titular de la seccion de cards-->
+        <div class="container text-center mt-3">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2>Elige uno de los tres planes de precios</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra inferior horizontal -->
+        <div class="container" id = "espacioPreCards">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="hr-custom">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- hemos usado como plantilla la card de ejemplo 
+         que se encuentra aqui:
+          https://getbootstrap.com/docs/4.0/components/card/ -->
+
+         
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4" id = "paddingCard1">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="/img/card_lowCost_v2.png" alt="Card image cap">  <!-- LA IMAGEN de lowcost, del cerdito, la generó dall-e. Con el gimp la hemos editado eliminando canal alpha y haciendo variaciones para el coste medio y coste premium (las dos cards restantes)-->
+                  <div class="card-body">
+                    <h5 class="card-title">Plan económico</h5>
+                    <ul class="card-text">
+                        <li>Transporte en autobús compartido</li>
+                        <li>Guía turístico local</li>
+                        <li>Avistamiento de fauna en parques nacionales</li>
+                        <li>Alojamiento en camping</li>
+                        <li>Comidas incluidas (menú básico)</li>
+                        <li>África 4 dias, Zimbabue 3 días. </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4" id = "paddingCard2">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="/img/card_mediumCost.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Plan intermedio</h5>
+                    <ul class="card-text">
+                        <li>Transporte en minibús (grupos de 8-10 personas)</li>
+                        <li>Guía especializado bilingüe</li>
+                        <li>Safaris y excursiones a puntos principales</li>
+                        <li>Lodge estándar con habitación doble</li>
+                        <li>Pensión completa con variedad gastronómica</li>
+                        <li>Africa 5 días | Zimbabue 3 (itinerario completo)</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4" id = "paddingCard3">
+                <div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="/img/card_premiumCost.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Plan premium</h5>
+                    <ul class="card-text">
+                        <li>Toyota Land Cruiser 2024 privado (4 personas)</li>
+                        <li>Guía experto personal multilingüe</li>
+                        <li>Acceso exclusivo a zonas restringidas</li>
+                        <li>Lodge premium con suite privada</li>
+                        <li>Gastronomía gourmet y cenas especiales</li>
+                        <li>Africa 8 días | Zimbabue 5 (itinerario completo)</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+
         <!-- FOOTER -->
-        <!-- FOOTER -->
-        <footer class="text-center py-3 mt-4">
+        <footer class="text-center py-5 mt-4">
             <div class="row">
                 <div class="col-12">
                     <p>&copy; 2025 Black Boots Safaris | Follow us</p>
@@ -644,7 +747,7 @@
         <!-- Bootstrap 5 JavaScript (CDN) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-            </script>
+        </script>
 
 </body>
 
