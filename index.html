@@ -129,7 +129,7 @@
                 <!-- Texto al lado derecho del carrusel -->
                 <div class="col-12 col-md-5 col-lg-4 d-flex align-items-center">
                     <div>
-                        <h2>Safari en la Sabana Africana</h2>
+                        <h2>Safari en la Sabana Africana (Kenia, Tanzania o Sudáfrica)</h2>
                         <p>Un safari por la sabana africana es una experiencia única que permite adentrarse en la
                             naturaleza
                             salvaje. Durante el recorrido, podrás observar majestuosos animales como leones, elefantes,
@@ -799,14 +799,23 @@
                   <label for="exampleFormControlSelect2" class = "mt-3 mb-2">¿Qué safari te suscita interés? ¿Los dos?</label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
                     <option value="" disabled>Selecciona una o varias opciones:</option>
-                    <option>África</option>
-                    <option>Zimbabue</option>
+                    <option>Kenia (Sabana)</option>
+                    <option>Tanzania (Sabana)</option>
+                    <option>Sudáfrica (Sabana)</option>
+                    <option>Zimbabue (Selva)</option>
                     <option>Otro (tenemos más safaris en camino)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1" class = "mt-3 mb-2">Cuéntanos que expectativas tienes:</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"  placeholder="pregúntanos sobre el transporte, seguridad, fechas, descuentos para grupos, etc."></textarea>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input class="form-check-input" type="checkbox" value="" id="checkBoxTermes">
+                    <label class="form-check-label" for="checkBoxTermes">                 <!-- Botón que abrirá el modal -->
+                        He leído y acepto los <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin:0; padding: 0; padding-left: .3em; padding-bottom: .5em;">Términos y condiciones</button>
+                    </label>
                 </div>
 
                 <!-- Añado el boton con las clases d.flex y justify-content-center para que quede centrado en el formulario-->
@@ -816,6 +825,49 @@
               </form>
         </div>
 
+
+
+
+ 
+
+
+        
+        <!-- MODAL PARA LOS TÉRMINOS Y CONDICIONES -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Términos y Condiciones</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" style = "color: black;"> <!--unica forma de definir a texto negro aqui era con el inline style porque los style con id y con clase no funcionan, porque chocan con clases bootstrap-->
+                <h5>Protección de Datos Personales</h5>
+                <p>En Black Boots Safaris, nos comprometemos a proteger tu privacidad. Los datos personales que nos proporciones, como tu nombre, dirección de correo electrónico y cualquier otra información relacionada con tu solicitud, serán utilizados únicamente para responder a tu consulta y ofrecerte la información más adecuada sobre nuestros safaris y servicios.</p>
+                <p>Nos aseguramos de cumplir con las regulaciones locales e internacionales de protección de datos personales. Nunca compartiremos tu información con terceros sin tu consentimiento explícito, salvo en aquellos casos en los que sea necesario para la realización del servicio (por ejemplo, con guías turísticos locales o autoridades competentes en caso de emergencia).</p>
+                
+                <h5>Condiciones Legales para los Safaris</h5>
+                <p>Al reservar un safari con Black Boots Safaris, aceptas las siguientes condiciones y reconoces los riesgos inherentes a las actividades de aventura en la naturaleza africana:</p>
+                <ul>
+                    <li><strong>Seguridad y Responsabilidad</strong>: Participar en un safari implica riesgos naturales, como encuentros con animales salvajes, condiciones climáticas extremas y posibles accidentes durante las actividades. Es importante seguir todas las indicaciones de nuestros guías y personal de seguridad.</li>
+                    <li><strong>Salud</strong>: Los participantes deben estar en buena condición física para realizar las actividades del safari. Se recomienda consultar con un médico antes de realizar cualquier actividad física intensa. Black Boots Safaris no se hace responsable de incidentes relacionados con la salud de los participantes si no se siguen las recomendaciones.</li>
+                    <li><strong>Seguro de Viaje</strong>: Todos los participantes deben contar con un seguro de viaje adecuado que cubra accidentes, enfermedades y posibles evacuaciones. Black Boots Safaris no se responsabiliza por cualquier tipo de gasto relacionado con emergencias médicas.</li>
+                    <li><strong>Condiciones Climáticas y Logísticas</strong>: En África, las condiciones climáticas pueden variar drásticamente. Algunos itinerarios o actividades pueden estar sujetos a cambios por razones meteorológicas, de seguridad o por disposición de las autoridades locales. En estos casos, nos comprometemos a ofrecer alternativas o reembolsos parciales.</li>
+                    <li><strong>Comportamiento</strong>: Los participantes deben respetar las normas de comportamiento y respeto por el entorno natural y las comunidades locales. Cualquier acto que ponga en riesgo la seguridad de los demás, de los animales o del medio ambiente resultará en la expulsión inmediata del safari, sin derecho a reembolso.</li>
+                    <li><strong>Derechos de Imagen</strong>: Durante el safari, pueden tomarse fotografías o grabaciones de los participantes. Al unirse a un safari, los participantes consienten el uso de sus imágenes para fines promocionales de Black Boots Safaris, salvo que se indique lo contrario.</li>
+                </ul>
+        
+                <h5>Exoneración de Responsabilidad</h5>
+                <p>Al aceptar estos términos y condiciones, liberas a Black Boots Safaris y a sus empleados de cualquier responsabilidad por daños, pérdidas o lesiones que puedan ocurrir durante el safari, salvo en casos de negligencia grave por parte de la empresa.</p>
+        
+                <p>Te recomendamos leer todos los detalles sobre la seguridad, la logística del safari y las condiciones locales antes de realizar la reserva. Tu participación en el safari implica que comprendes y aceptas estas condiciones.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
 
 
 
