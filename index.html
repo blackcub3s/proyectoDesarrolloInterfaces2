@@ -680,6 +680,7 @@
                         <li>Alojamiento en camping</li>
                         <li>Comidas incluidas (menú básico)</li>
                         <li>África 4 dias | Zimbabue 3 días. </li>
+                        <li>Precio total: <strong class = "text-success">1000€</strong></li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -700,6 +701,7 @@
                         <li>Lodge estándar con habitación doble</li>
                         <li>Pensión completa con variedad gastronómica</li>
                         <li>Africa 5 días | Zimbabue 3</li>
+                        <li>Precio total: <strong class = "text-success">1500€</strong></li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -720,6 +722,7 @@
                         <li>Lodge premium con suite privada</li>
                         <li>Gastronomía gourmet (estrella michelin)</li>
                         <li>Africa 8 días | Zimbabue 5</li>
+                        <li>Precio total: <strong class = "text-success">4000€</strong></li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -783,6 +786,7 @@
                 <div class="form-group">
                   <label for="exampleFormControlSelect1" class = "mt-3 mb-1">Escoge un plan sobre el que querrías información:</label> <!--mt-2 es margin-top-2 (Classe bootstrap). mb es margin bottom. Lo usamos en todas las labels del formulario-->
                   <select class="form-control" id="exampleFormControlSelect1">
+                    <option disabled selected>Selecciona una opción</option>
                     <option>Plan económico</option>
                     <option>Plan intermedio</option>
                     <option>Plan premium</option>
@@ -791,14 +795,15 @@
                 <div class="form-group">
                   <label for="exampleFormControlSelect2" class = "mt-3 mb-2">¿Qué safari te suscita interés? ¿Los dos?</label>
                   <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option value="" disabled>Selecciona una o varias opciones:</option>
                     <option>África</option>
                     <option>Zimbabue</option>
-                    <option>Otro (tenemos más en camino, marca esta opción si quieres saber más novedades)</option>
+                    <option>Otro (tenemos más safaris en camino)</option>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1" class = "mt-3 mb-2">Cuéntanos que expectativas tienes:</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"  placeholder="pregúntanos sobre el transporte, seguridad, fechas, descuentos para grupos, etc."></textarea>
                 </div>
 
                 <!-- Añado el boton con las clases d.flex y justify-content-center para que quede centrado en el formulario-->
