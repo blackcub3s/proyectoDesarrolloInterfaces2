@@ -78,3 +78,13 @@ que tome el fondo de la web*/
 .card {
     background-color: rgba(255, 255, 255, 0.3); 
 }
+
+
+/* Ocultamos el texto de Black Boots Safaris en la navbar
+ cuando el tamaño de la ventana sea pequeño (con esto evitamos que el menu hamburguesa
+ pueda hacer overflow y caerse hacia abajo a la izquierda)*/
+@media (max-width: 500px) {
+    .brand-text {
+        display: none;
+    }
+}
