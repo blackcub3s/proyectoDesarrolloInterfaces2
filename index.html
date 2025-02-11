@@ -25,8 +25,8 @@
             <div class="container">
                 <!-- Marca / Logo -->
                 <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-                    <img src="img/logo.jpg" alt="Black Boots Safaris" height="70px" class="me-2">
-                    Black Boots Safaris
+                    <img src="img/logo_eliminatFons.png" alt="Black Boots Safaris" height="70px" class="me-2">
+                    <span class="brand-text">Black Boots Safaris</span>
                 </a>
                 <!-- Botón para menú colapsable en dispositivos móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -40,13 +40,13 @@
                             <a class="nav-link active fw-bold" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#destino">Destinos</a>
+                            <a class="nav-link" href="#destino">Destinos</a> <!-- links a IDs de subsecciones de la misma landing, -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#precios">Precios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@
         </div>
 
         <!-- Texto central -->
-        <div class="container text-center mt-3">
+        <div class="container text-center mt-0"> <!-- mt-0 evita que haya padding por encima, si pones mt-3 se genera un padding estraño-->
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
                     <h2>Elige tu destino de safari en África</h2>
@@ -639,7 +639,7 @@
         </div>
 
         <!-- Texto central del titular de la seccion de cards-->
-        <div class="container text-center mt-3">
+        <div class="container text-center mt-0">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
                     <h2>Elige uno de los tres planes de precios</h2>
@@ -674,12 +674,14 @@
                   <div class="card-body">
                     <h5 class="card-title display-6 text-center">Plan económico</h5> <!-- display 6 controla el tamaño-->
                     <ul class="card-text">
-                        <li>Transporte en autobús (30 personas)</li>
+                        <li>Transporte en autobús</li>
+                        <li>Grupo de 30 personas.</li>
                         <li>Guía turístico local</li>
                         <li>Avistamiento de fauna en parques nacionales</li>
                         <li>Alojamiento en camping</li>
-                        <li>Comidas incluidas (menú básico)</li>
-                        <li>África 4 dias, Zimbabue 3 días. </li>
+                        <li>Menú básico</li>
+                        <li>África 4 dias | Zimbabue 3 días. </li>
+                        <li>Precio total: <strong class = "text-success">1000€</strong></li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -694,12 +696,14 @@
                   <div class="card-body">
                     <h5 class="card-title display-6 text-center">Plan intermedio</h5> <!-- con la clase display-6 hacemos mas grande el titulo de cada card-->
                     <ul class="card-text">
-                        <li>Transporte en minibús (10 personas)</li>
+                        <li>Transporte en minibús</li>
+                        <li>Grupo de 10 personas.</li>
                         <li>Guía especializado bilingüe</li>
-                        <li>Safaris y excursiones a puntos principales</li>
-                        <li>Lodge estándar con habitación doble</li>
-                        <li>Pensión completa con variedad gastronómica</li>
-                        <li>Africa 5 días | Zimbabue 3 (itinerario completo)</li>
+                        <li>Excursiones a puntos principales</li>
+                        <li>Lodge estándar (hab. doble)</li>
+                        <li>Variedad gastronómica</li>
+                        <li>Africa 5 días | Zimbabue 3</li>
+                        <li>Precio total: <strong class = "text-success">1500€</strong></li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -714,12 +718,14 @@
                   <div class="card-body">
                     <h5 class="card-title display-6 text-center">Plan premium</h5>
                     <ul class="card-text">
-                        <li>Toyota Land Cruiser 2024 privado (4 personas)</li>
-                        <li>Guía experto personal multilingüe</li>
-                        <li>Acceso exclusivo a zonas restringidas</li>
-                        <li>Lodge premium con suite privada</li>
-                        <li>Gastronomía gourmet y cenas especiales</li>
-                        <li>Africa 8 días | Zimbabue 5 (itinerario completo)</li>
+                        <li>Transporte: Toyota Land Cruiser</li>
+                        <li>Grupo de 4 personas.</li>
+                        <li>Guía experto multilingüe</li>
+                        <li>Acceso a zonas restringidas</li>
+                        <li>Lodge premium (suite)</li>
+                        <li>Gastronomía gourmet</li>
+                        <li>Africa 8 días | Zimbabue 5</li>
+                        <li>Precio total: <strong class = "text-success">4000€</strong></li>
                     </ul>
                     <div class="d-flex justify-content-center">  <!-- con d-flex + justify-content-center conseguimos centrado ell botón -->
                         <a href="#" class="btn btn-primary">Ver detalles</a>
@@ -730,6 +736,88 @@
             </div>
           </div>
           
+
+        
+        
+        
+        <!-- TITULO DEL FORMULARIO DE CONTACTO -->
+
+        <!-- Barra superior horizontal -->
+        <div class="container mt-4" id = "contacto">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="hr-custom">
+                </div>
+            </div>
+        </div>
+
+        <!-- Texto central -->
+        <div class="container text-center mt-0">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2>Contacta con nosotros</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra inferior horizontal -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="hr-custom">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- FORMULARIO DE CONTACTO -->
+         <!-- Se ha timado este formulario https://getbootstrap.com/docs/4.0/components/forms/ 
+          y se ha puesto dentro de un div class container. Luego se ha modificado para ajustarlo a nuestra página web.-->
+
+          <!--en dispositivos el formulario solo ocupara 5 columnas de las 12 posibles (Col-xl-5)-->
+          <!--en dispositivos grandes ocupará un poco más que en  los enormes: 7 columnas de las 12 posibles (Col-lg-9)-->
+          <!--- ... -->
+          <!-- en dispositivos pequeños (mobil por ejemplo) el formulario ocupará las 12 columnas de las 12 posibles de bootsrapp (TODA LA PANTALLA DE UN TELÉFONO MÓBIL, POR EJEMPLO)-->
+          <div class="container col-sm-12 col-md-8 col-lg-7 col-xl-5">   
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1" class = "mb-1">Correo electrónico</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1" class = "mt-3 mb-1">Escoge un plan sobre el que querrías información:</label> <!--mt-2 es margin-top-2 (Classe bootstrap). mb es margin bottom. Lo usamos en todas las labels del formulario-->
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option disabled selected>Selecciona una opción</option>
+                    <option>Plan económico</option>
+                    <option>Plan intermedio</option>
+                    <option>Plan premium</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2" class = "mt-3 mb-2">¿Qué safari te suscita interés? ¿Los dos?</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option value="" disabled>Selecciona una o varias opciones:</option>
+                    <option>África</option>
+                    <option>Zimbabue</option>
+                    <option>Otro (tenemos más safaris en camino)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1" class = "mt-3 mb-2">Cuéntanos que expectativas tienes:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"  placeholder="pregúntanos sobre el transporte, seguridad, fechas, descuentos para grupos, etc."></textarea>
+                </div>
+
+                <!-- Añado el boton con las clases d.flex y justify-content-center para que quede centrado en el formulario-->
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+              </form>
+        </div>
+
+
+
 
 
 
@@ -750,6 +838,9 @@
             </div>
         </footer>
 
+
+
+        
         <!-- Bootstrap 5 JavaScript (CDN) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
