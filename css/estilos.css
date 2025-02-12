@@ -1,6 +1,10 @@
+:root {
+    --blancoSabana: wheat;
+}
+
 body {
     background-color: rgb(170, 100, 50);
-    color: wheat;
+    color: var(--blancoSabana);
 }
 
 /* Estilo el encabezado */
@@ -16,16 +20,16 @@ body {
 
 .header h1 {
     font-size: 2.9rem;
-    color: wheat;
+    color: var(--blancoSabana);
 }
 
 .header p {
-    color: wheat;/
+    color: var(--blancoSabana);/
 }
 
 /* Estilo línea horizontal personalizada HR */
 .hr-custom {
-    border: 1.5px solid wheat;
+    border: 1.5px solid var(--blancoSabana);
 }
 
 /* Estilos generales para el acordeón (BOTONES)*/
@@ -38,7 +42,7 @@ body {
 /* Estilos para el contenido del acordeón */
 .accordion-body {
     background-color: rgb(92, 51, 23); 
-    color: wheat; 
+    color: var(--blancoSabana); 
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
 }
@@ -51,7 +55,7 @@ footer {
 }
 /* Estilo para los enlaces dentro del footer */
 footer a {
-    color: wheat;
+    color: var(--blancoSabana);
     text-decoration: none; /* Quitamos el subrayado de los enlaces por defecto */
 }
 
@@ -89,3 +93,42 @@ que tome el fondo de la web*/
     }
 }
 
+
+
+/*CREAMOS UN CONTENEDOR PARA AÑADIR UNA MÁSCARA CON TRANSPARENCIA EN LA IMAGEN 
+DE CADA CERDITO EN LAS CARDS. ES PARA MOSTRAR LA IMAGEN EN SU RECUADRO. IMPORTANTE
+PONER BORDER RADIUS SOLO ENCIMA, NO EN TODOS LOS CANTOS.*/
+.contenedorImagenCard {
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .contenedorImagenCard img {
+    width: 100%;
+    display: block;
+  }
+  
+  .contenedorImagenCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(181, 71, 8, 0.585);
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+    border-top-left-radius: .3em; /*hay que poner border radius en la izquierda arriba porque la card solo lo tiene definido arriba*/
+    border-top-right-radius: .3em; /*hay que poner border radius en la derecha arriba porque la card solo lo tiene definido arriba*/
+
+    transition: ease-in-out opacity .15s;
+  }
+
+  .contenedorImagenCard:hover::after {
+    opacity: 0.1;
+  }
+
+
+
+  
