@@ -129,6 +129,6 @@ PONER BORDER RADIUS SOLO ENCIMA, NO EN TODOS LOS CANTOS.*/
     opacity: 0.1;
   }
 
-
-
-  
+  .fondoMarronFormBootstrap {
+    background-color: var(--blancoSabana);
+  }
